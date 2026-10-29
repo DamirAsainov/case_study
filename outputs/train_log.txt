@@ -1,0 +1,112 @@
+device: cuda  (NVIDIA H200)
+
+=== PneumoniaMNIST ===
+PCA + LogReg baseline ...
+Simple CNN ...
+  epoch  1/30  train_loss=0.3688  val_loss=0.2920  val_auc=0.9836  val_acc=0.8760
+  epoch  2/30  train_loss=0.2813  val_loss=0.4381  val_auc=0.9858  val_acc=0.8531
+  epoch  3/30  train_loss=0.2516  val_loss=0.1660  val_auc=0.9925  val_acc=0.9542
+  epoch  4/30  train_loss=0.2497  val_loss=0.6790  val_auc=0.9907  val_acc=0.7824
+  epoch  5/30  train_loss=0.2372  val_loss=0.1692  val_auc=0.9886  val_acc=0.9427
+  epoch  6/30  train_loss=0.2320  val_loss=0.1431  val_auc=0.9972  val_acc=0.9656
+  epoch  7/30  train_loss=0.2140  val_loss=0.1566  val_auc=0.9963  val_acc=0.9523
+  epoch  8/30  train_loss=0.2128  val_loss=0.1623  val_auc=0.9967  val_acc=0.9599
+  epoch  9/30  train_loss=0.2072  val_loss=0.2974  val_auc=0.9970  val_acc=0.8931
+  epoch 10/30  train_loss=0.2032  val_loss=0.1095  val_auc=0.9972  val_acc=0.9771
+  epoch 11/30  train_loss=0.2023  val_loss=0.3238  val_auc=0.9930  val_acc=0.8912
+  epoch 12/30  train_loss=0.1972  val_loss=0.1001  val_auc=0.9980  val_acc=0.9771
+  epoch 13/30  train_loss=0.1975  val_loss=0.1674  val_auc=0.9976  val_acc=0.9466
+  epoch 14/30  train_loss=0.1868  val_loss=0.0984  val_auc=0.9971  val_acc=0.9771
+  epoch 15/30  train_loss=0.1917  val_loss=0.1603  val_auc=0.9961  val_acc=0.9504
+  epoch 16/30  train_loss=0.1853  val_loss=0.0855  val_auc=0.9972  val_acc=0.9771
+  epoch 17/30  train_loss=0.1880  val_loss=0.1587  val_auc=0.9967  val_acc=0.9561
+  epoch 18/30  train_loss=0.1801  val_loss=0.0754  val_auc=0.9981  val_acc=0.9809
+  epoch 19/30  train_loss=0.1745  val_loss=0.1236  val_auc=0.9971  val_acc=0.9714
+  epoch 20/30  train_loss=0.1768  val_loss=0.0879  val_auc=0.9977  val_acc=0.9809
+  epoch 21/30  train_loss=0.1732  val_loss=0.0774  val_auc=0.9982  val_acc=0.9847
+  epoch 22/30  train_loss=0.1694  val_loss=0.1018  val_auc=0.9972  val_acc=0.9771
+  epoch 23/30  train_loss=0.1707  val_loss=0.1033  val_auc=0.9978  val_acc=0.9771
+  epoch 24/30  train_loss=0.1671  val_loss=0.0833  val_auc=0.9984  val_acc=0.9828
+  epoch 25/30  train_loss=0.1637  val_loss=0.1039  val_auc=0.9978  val_acc=0.9752
+  epoch 26/30  train_loss=0.1630  val_loss=0.0981  val_auc=0.9975  val_acc=0.9790
+  epoch 27/30  train_loss=0.1633  val_loss=0.0963  val_auc=0.9973  val_acc=0.9771
+  epoch 28/30  train_loss=0.1619  val_loss=0.1096  val_auc=0.9973  val_acc=0.9714
+  epoch 29/30  train_loss=0.1609  val_loss=0.0953  val_auc=0.9975  val_acc=0.9771
+  epoch 30/30  train_loss=0.1614  val_loss=0.1060  val_auc=0.9973  val_acc=0.9771
+ResNet-18 (TL) ...
+/home/damir/tva/case_study/src/train.py:43: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+  epoch  1/15  train_loss=0.3351  val_loss=0.1992  val_auc=0.9908  val_acc=0.9351
+  epoch  2/15  train_loss=0.2427  val_loss=0.4131  val_auc=0.9922  val_acc=0.8779
+  epoch  3/15  train_loss=0.2105  val_loss=0.1209  val_auc=0.9969  val_acc=0.9656
+  epoch  4/15  train_loss=0.1921  val_loss=0.2056  val_auc=0.9972  val_acc=0.9351
+  epoch  5/15  train_loss=0.1827  val_loss=0.1233  val_auc=0.9974  val_acc=0.9637
+  epoch  6/15  train_loss=0.1846  val_loss=0.0769  val_auc=0.9983  val_acc=0.9847
+  epoch  7/15  train_loss=0.1834  val_loss=0.1778  val_auc=0.9967  val_acc=0.9447
+  epoch  8/15  train_loss=0.1705  val_loss=0.0811  val_auc=0.9973  val_acc=0.9790
+  epoch  9/15  train_loss=0.1619  val_loss=0.1218  val_auc=0.9971  val_acc=0.9656
+  epoch 10/15  train_loss=0.1564  val_loss=0.1110  val_auc=0.9980  val_acc=0.9733
+  epoch 11/15  train_loss=0.1547  val_loss=0.1028  val_auc=0.9986  val_acc=0.9752
+  epoch 12/15  train_loss=0.1507  val_loss=0.0952  val_auc=0.9980  val_acc=0.9733
+  epoch 13/15  train_loss=0.1501  val_loss=0.1017  val_auc=0.9988  val_acc=0.9752
+  epoch 14/15  train_loss=0.1493  val_loss=0.1039  val_auc=0.9988  val_acc=0.9752
+  epoch 15/15  train_loss=0.1475  val_loss=0.1016  val_auc=0.9988  val_acc=0.9752
+  PCA + LogReg     AUC=0.9180 [0.890, 0.943]  acc=0.8766  bal_acc=0.8440  F1=0.8603  ECE=0.0955
+  Simple CNN       AUC=0.9793 [0.964, 0.992]  acc=0.9471  bal_acc=0.9312  F1=0.9420  ECE=0.0196
+  ResNet-18 (TL)   AUC=0.9903 [0.984, 0.996]  acc=0.9551  bal_acc=0.9427  F1=0.9512  ECE=0.0145
+
+=== DermaMNIST ===
+PCA + LogReg baseline ...
+Simple CNN ...
+  epoch  1/30  train_loss=1.7632  val_loss=0.9570  val_auc=0.8721  val_acc=0.6640
+  epoch  2/30  train_loss=1.5767  val_loss=1.2470  val_auc=0.8283  val_acc=0.5404
+  epoch  3/30  train_loss=1.5365  val_loss=0.8622  val_auc=0.8991  val_acc=0.6969
+  epoch  4/30  train_loss=1.5106  val_loss=0.8172  val_auc=0.9000  val_acc=0.7318
+  epoch  5/30  train_loss=1.4778  val_loss=0.9329  val_auc=0.9107  val_acc=0.7139
+  epoch  6/30  train_loss=1.4437  val_loss=0.9936  val_auc=0.8594  val_acc=0.6351
+  epoch  7/30  train_loss=1.4349  val_loss=0.8522  val_auc=0.9050  val_acc=0.7478
+  epoch  8/30  train_loss=1.4019  val_loss=1.0033  val_auc=0.8721  val_acc=0.6650
+  epoch  9/30  train_loss=1.3788  val_loss=1.0125  val_auc=0.8914  val_acc=0.6411
+  epoch 10/30  train_loss=1.3749  val_loss=0.8311  val_auc=0.8872  val_acc=0.7258
+  epoch 11/30  train_loss=1.3634  val_loss=0.9175  val_auc=0.8969  val_acc=0.7188
+  epoch 12/30  train_loss=1.3311  val_loss=0.9178  val_auc=0.9096  val_acc=0.6530
+  epoch 13/30  train_loss=1.3268  val_loss=0.7584  val_auc=0.9167  val_acc=0.7547
+  epoch 14/30  train_loss=1.3021  val_loss=0.7380  val_auc=0.9234  val_acc=0.7478
+  epoch 15/30  train_loss=1.3085  val_loss=0.9259  val_auc=0.9134  val_acc=0.7089
+  epoch 16/30  train_loss=1.2798  val_loss=1.0318  val_auc=0.8814  val_acc=0.6550
+  epoch 17/30  train_loss=1.2769  val_loss=0.8169  val_auc=0.9158  val_acc=0.7288
+  epoch 18/30  train_loss=1.2629  val_loss=0.8134  val_auc=0.9213  val_acc=0.7328
+  epoch 19/30  train_loss=1.2487  val_loss=0.7201  val_auc=0.9311  val_acc=0.7597
+  epoch 20/30  train_loss=1.2236  val_loss=0.7357  val_auc=0.9133  val_acc=0.7428
+  epoch 21/30  train_loss=1.2269  val_loss=0.7814  val_auc=0.9363  val_acc=0.7328
+  epoch 22/30  train_loss=1.1889  val_loss=0.7388  val_auc=0.9242  val_acc=0.7617
+  epoch 23/30  train_loss=1.1747  val_loss=0.7294  val_auc=0.9356  val_acc=0.7507
+  epoch 24/30  train_loss=1.1622  val_loss=0.6962  val_auc=0.9449  val_acc=0.7617
+  epoch 25/30  train_loss=1.1534  val_loss=0.7069  val_auc=0.9393  val_acc=0.7657
+  epoch 26/30  train_loss=1.1412  val_loss=0.7030  val_auc=0.9386  val_acc=0.7677
+  epoch 27/30  train_loss=1.1254  val_loss=0.6905  val_auc=0.9373  val_acc=0.7717
+  epoch 28/30  train_loss=1.1220  val_loss=0.6857  val_auc=0.9415  val_acc=0.7687
+  epoch 29/30  train_loss=1.1111  val_loss=0.6939  val_auc=0.9391  val_acc=0.7687
+  epoch 30/30  train_loss=1.1066  val_loss=0.6900  val_auc=0.9402  val_acc=0.7637
+ResNet-18 (TL) ...
+  epoch  1/15  train_loss=1.7366  val_loss=0.8476  val_auc=0.9233  val_acc=0.7168
+  epoch  2/15  train_loss=1.3775  val_loss=0.8096  val_auc=0.8943  val_acc=0.7228
+  epoch  3/15  train_loss=1.2747  val_loss=0.7849  val_auc=0.9303  val_acc=0.7358
+  epoch  4/15  train_loss=1.1803  val_loss=0.8102  val_auc=0.9250  val_acc=0.7278
+  epoch  5/15  train_loss=1.1334  val_loss=0.7481  val_auc=0.9336  val_acc=0.7238
+  epoch  6/15  train_loss=1.0870  val_loss=0.6701  val_auc=0.9198  val_acc=0.7767
+  epoch  7/15  train_loss=1.0329  val_loss=0.8195  val_auc=0.8992  val_acc=0.7438
+  epoch  8/15  train_loss=0.9986  val_loss=0.6546  val_auc=0.9404  val_acc=0.7827
+  epoch  9/15  train_loss=0.9503  val_loss=0.6646  val_auc=0.9330  val_acc=0.7986
+  epoch 10/15  train_loss=0.8940  val_loss=0.5658  val_auc=0.9456  val_acc=0.8146
+  epoch 11/15  train_loss=0.8506  val_loss=0.5959  val_auc=0.9407  val_acc=0.8036
+  epoch 12/15  train_loss=0.8006  val_loss=0.5415  val_auc=0.9473  val_acc=0.8375
+  epoch 13/15  train_loss=0.7725  val_loss=0.5640  val_auc=0.9422  val_acc=0.8315
+  epoch 14/15  train_loss=0.7429  val_loss=0.5598  val_auc=0.9437  val_acc=0.8365
+  epoch 15/15  train_loss=0.7398  val_loss=0.5402  val_auc=0.9448  val_acc=0.8385
+  PCA + LogReg     AUC=0.8172 [0.798, 0.836]  acc=0.5262  bal_acc=0.4418  F1=0.3341  ECE=0.1477
+  Simple CNN       AUC=0.9482 [0.940, 0.955]  acc=0.7551  bal_acc=0.6696  F1=0.6153  ECE=0.0860
+  ResNet-18 (TL)   AUC=0.9581 [0.947, 0.968]  acc=0.8384  bal_acc=0.7667  F1=0.7564  ECE=0.0753
+
+Saved results to outputs/results.json and figures to outputs/figures
+EXIT_DONE
